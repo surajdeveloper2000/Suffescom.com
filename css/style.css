@@ -1,0 +1,353 @@
+:root {
+    --primary-color: #d13139;
+    --heading-color: #2b2727;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 215px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Charlie Display';
+}
+
+.primary-btn {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.secondary-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* annuncement */
+.announcement-wrapper {
+    background: var(--primary-color);
+}
+
+.announcement-wrapper p {
+    font-size: 16px;
+    font-family: 'Charlie Display';
+    font-weight: 300;
+}
+
+/* annuncement end */
+
+/* header css start */
+header .navbar {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    padding: 25px 0;
+}
+
+header .navbar .navbar-toggler-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navbar .navbar-toggler-icon div {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #bbbbbb;
+    font-family: 'Charlie Display';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.cart-number {
+    background: var(--primary-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5px;
+    right: -15px;
+    color: #fff;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media(max-width: 991px) {
+    header .navbar{
+        background: #000;
+        padding: 10px 0;
+    }
+    div#navbarSupportedContent {
+        position: absolute;
+        background: #000;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 90px;
+        padding: 20px;
+    }
+
+    .navbar-light .navbar-brand {
+        width: 50%;
+    }
+}
+
+/* header css end */
+
+/* hero area css start */
+.hero-area {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-area .container {
+    height: 100%;
+}
+
+.hero-area .container .row {
+    height: 100%;
+    align-items: center;
+}
+
+.hero-bg {
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-area .subtitle {
+    font-family: 'Great Sejagad';
+    font-size: 72px;
+    color: var(--primary-color);
+}
+
+.hero-area .hero-text h1 {
+    font-size: 72px;
+    font-family: 'Charlie Display Ultra';
+}
+
+.hero-area .hero-text p {
+    font-size: 20px;
+    font-family: 'Charlie Display';
+    font-weight: 300;
+    margin-top: 32px;
+}
+
+.hero-btns {
+    margin-top: 43px;
+}
+@media(max-width: 480px){
+    .hero-area .subtitle {
+        font-size: 50px;
+    }
+}
+
+/* hero area css end */
+
+/* collection css start */
+.our-collection {
+    padding: 80px 0;
+}
+
+.our-collection .section-title {
+    margin-bottom: 50px;
+}
+
+.our-collection .section-title p {
+    font-family: 'Great Sejagad';
+    font-size: 42px;
+    color: var(--primary-color);
+    line-height: 10px;
+}
+
+.our-collection .section-title h2 {
+    font-size: 72px;
+    font-family: 'Charlie Display Ultra';
+}
+
+.our-collection .collection-block .inner-block {
+    position: relative;
+    display: block;
+}
+
+.our-collection .collection-block .inner-block {
+    overflow: hidden;
+}
+
+.our-collection .collection-block .inner-block img {
+    max-width: 100%;
+    transition: 0.8s ease-in-out;
+}
+
+.our-collection .collection-block .inner-block img:hover {
+    transform: scale(1.5);
+}
+
+.our-collection .collection-block .inner-block .title-block {
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.our-collection .collection-block .inner-block .title-block h5 {
+    color: #fff;
+}
+
+.our-collection .slick-slide {
+    margin-right: 20px;
+}
+
+.our-collection .slick-prev:before {
+    content: "<";
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.our-collection .slick-next:before {
+    content: ">";
+    color: #fff;
+    font-size: 30px;
+}
+
+.our-collection button.slick-next.pull-right.slick-arrow {
+    position: absolute;
+    top: -130px;
+    right: 0;
+    width: 76px;
+    height: 71px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+.our-collection button.slick-prev.pull-left.slick-arrow {
+    position: absolute;
+    top: -130px;
+    right: 100px;
+    width: 76px;
+    height: 71px;
+    border: none;
+    background: transparent;
+}
+
+.our-collection button.slick-prev.pull-left.slick-arrow:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.our-collection .collection-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+@media(max-width: 768px) {
+    .hero-area .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .our-collection .section-title h2 {
+        font-size: 32px;
+    }
+}
+@media(max-width: 480px){
+    .our-collection button.slick-next.pull-right.slick-arrow, .our-collection button.slick-prev.pull-left.slick-arrow {
+        width: 50px;
+        height: 50px;
+    }
+    .our-collection button.slick-prev.pull-left.slick-arrow {
+        top: 100%;
+        right: 55%;
+        margin: 20px 0;
+    }
+    .our-collection button.slick-next.pull-right.slick-arrow {
+        top: 100%;
+        right: 40%;
+        margin: 20px 0;
+    }
+    .our-collection .collection-btn {
+        margin-top: 100px;
+    }
+}
+
+/* collection css end */
+
+/* footer css start */
+footer {
+    border-top: 1px solid var(--heading-color);
+    padding: 20px 0;
+}
+
+footer .footer-block span {
+    color: #909090;
+    margin-right: 20px;
+    font-family: 'Charlie Display';
+    font-weight: 600;
+}
+
+footer .footer-block a {
+    color: #909090;
+    text-decoration: none;
+    border-left: 1px solid #909090;
+    padding: 0 20px;
+    font-family: 'Charlie Display';
+    font-weight: 600;
+}
+/* footer css end */

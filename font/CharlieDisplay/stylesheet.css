@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Charlie Display';
+    src: url('CharlieDisplay-Light.eot');
+    src: url('CharlieDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('CharlieDisplay-Light.woff2') format('woff2'),
+        url('CharlieDisplay-Light.woff') format('woff'),
+        url('CharlieDisplay-Light.ttf') format('truetype'),
+        url('CharlieDisplay-Light.svg#CharlieDisplay-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Charlie Display';
+    src: url('CharlieDisplay-Semibold.eot');
+    src: url('CharlieDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('CharlieDisplay-Semibold.woff2') format('woff2'),
+        url('CharlieDisplay-Semibold.woff') format('woff'),
+        url('CharlieDisplay-Semibold.ttf') format('truetype'),
+        url('CharlieDisplay-Semibold.svg#CharlieDisplay-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Charlie Display Ultra';
+    src: url('CharlieDisplay-Ultra.eot');
+    src: url('CharlieDisplay-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('CharlieDisplay-Ultra.woff2') format('woff2'),
+        url('CharlieDisplay-Ultra.woff') format('woff'),
+        url('CharlieDisplay-Ultra.ttf') format('truetype'),
+        url('CharlieDisplay-Ultra.svg#CharlieDisplay-Ultra') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
